@@ -426,7 +426,7 @@ define Device/glinet_gl-s200
   IMAGE/sysupgrade.bin := append-kernel | pad-to $$$$(BLOCKSIZE) | \
 	append-rootfs | pad-rootfs | append-metadata | check-size $$$$(IMAGE_SIZE)
 endef
-TARGET_DEVICES += glinet_gl-s200
+#TARGET_DEVICES += glinet_gl-s200
 
 define Device/iodata_etg3-r
   ATH_SOC := ar9342

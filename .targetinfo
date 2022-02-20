@@ -4883,16 +4883,6 @@ Target-Profile-Description:
 Build firmware images for GL.iNet GL-AR300M-Lite
 @@
 
-Target-Profile: DEVICE_glinet_gl-s200
-Target-Profile-Name: GL.iNet GL-S200
-Target-Profile-Packages: kmod-usb-core kmod-usb2 kmod-ath10k-ct ath10k-firmware-qca9887-ct 
-Target-Profile-hasImageMetadata: 1
-Target-Profile-SupportedDevices: glinet,gl-s200 gl-s200
-
-Target-Profile-Description:
-Build firmware images for GL.iNet GL-S200
-@@
-
 Target-Profile: DEVICE_iodata_etg3-r
 Target-Profile-Name: I-O DATA ETG3-R
 Target-Profile-Packages: -iwinfo -kmod-ath9k -wpad-basic 
@@ -6036,6 +6026,27 @@ Target-Profile-SupportedDevices: glinet,gl-x1200-nor-nand gl-x1200 glinet,gl-x12
 
 Target-Profile-Description:
 Build firmware images for GL.iNet GL-X1200 (NOR/NAND)
+@@
+
+Target-Profile: DEVICE_glinet_gl-s200-nor
+Target-Profile-Name: GL.iNet GL-S200 (NOR)
+Target-Profile-Packages: kmod-usb2 kmod-usb-serial-ch341 
+Target-Profile-hasImageMetadata: 0
+Target-Profile-SupportedDevices: glinet,gl-s200-nor gl-s200 glinet,gl-s200
+
+Target-Profile-Description:
+Build firmware images for GL.iNet GL-S200 (NOR)
+@@
+
+Target-Profile: DEVICE_glinet_gl-s200-nor-nand
+Target-Profile-Name: GL.iNet GL-S200 (NOR/NAND)
+Target-Profile-Packages: kmod-usb2 block-mount kmod-usb-serial-ch341 
+Target-Profile-Packages: kmod-usb2 kmod-ath10k ath10k-firmware-qca9887 block-mount PCI_SUPPORT 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: glinet,gl-s200-nor-nand gl-s200 glinet,gl-s200
+
+Target-Profile-Description:
+Build firmware images for GL.iNet GL-S200 (NOR/NAND)
 @@
 
 Target: ath79/tiny
